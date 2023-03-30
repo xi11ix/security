@@ -39,7 +39,11 @@ Please note: You don't need a local installation if you are using GitHub Codespa
 The following local installation guide is adapted to Debian/Ubuntu and CentOS/RHEL.
 
 1. Open your terminal.
-2. Install OpenLDAP headers needed to compile `python-ldap`, depending on your Linux distribution. Check by running:
+2. Clone your repository
+```bash
+git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+```
+3. Install OpenLDAP headers needed to compile `python-ldap`, depending on your Linux distribution. Check by running:
 ```bash
 uname -a
 ```
@@ -56,7 +60,7 @@ sudo yum install python-devel openldap-devel
 ```bash
 pip3 install pyOpenSSL
 ```
-3. Install the other dependencies by running:
+4. Install the other dependencies by running:
 ```bash
 pip3 install -r requirements.txt
 ```
